@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#f9f9f9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.jedan{
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(white,rgb(100, 167, 243));
+    box-shadow: 10px 50px 50px rgba(0, 0, 0, 0.15);
+    font-family: Inter;
+}
+
+.jedan ul{
+    width: 100%;
+}
+
+.jedan li{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 35px;
+}
+
+.jedan img{
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    width: 50px;
+    height: 50px;
+    transition: 0.25s ease;
+}
+
+#kontakt{
+    position: absolute;
+    top: 29%;
+    left: 66%;
+    width: 35px;
+    height: 35px;
+    transition: 0.25s ease;
+}
+
+img:hover{
+    scale: 1.2;
+}
+
+.jedan h1{
+    position:absolute;
+    top: 25px;
+    left: 110px;
+    color: rgb(12, 68, 133);
+    font-family: Inter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter-VariableFont_opsz,wght.ttf);
+}
+
+h1:hover{
+    color: #f9f9f9;
+    transition: 0.2s;
+}
+
+.naslov{
+    text-transform: uppercase;
+    padding: 0px 110px;
+    font-family: Inter;
+    color: rgb(12, 68, 133); 
+}
+
+.gornjitekst{
+    width: 75%;
+    text-align: center;
+    margin: 55px auto;
+}
+
+.levislide ul{
+    position:absolute;
+    top: 55%;
+    left: 10%;
+}
+
+#prvi:hover{
+    color: rgb(255, 102, 0);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+.jedan li:hover{
+    background-color: #73b4ffa4;
+}
+
+h2{
+    margin: 50px 110px;
+    font-family: Inter;
+    color: rgb(12, 68, 133); 
+}
+
+input[type="text"]{
+    color:red;
+    border: 2px solid rgb(152, 229, 255);
+    border-radius: 8px;
+    width:250px;
+    height: 25px;
+    padding: 0px 10px;
+}
+
+input[type="email"]{
+    border-radius: 8px;
+    border: 2px solid rgb(152, 229, 255);
+    width:250px;
+    height: 25px;
+    padding: 0px 10px;
+}
+
+form{
+    border-left: 5px solid rgba(233, 85, 0, 0.747);
+    padding: 20px;
+    border-radius: 10px;
+    position:absolute;
+    margin: 10px 70px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    font-size: 14px;
+    border: 3px solid rgb(255, 25, 82);
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 120px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(255, 25, 82);
+    color: white;
+    transition: 0.3s ease;
+
+}
+
+input[type="submit"]:active{
+    background-color: white;
+    color:black;
+}
+
+.levislide img{
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    width: 110px;
+    height: 110px;
+    transition: 0.25s ease;
+}
+
+.levislide p{
+    text-align: justify;
+    margin: 5% 10%;
+    margin-left: 45%;
+}
+
+.levislide{
+    position: relative;
+    width: 600px;
+    height:380px;
+    border: 2px solid white;
+    border-left: none;
+    margin-left: 25%;
+    margin-top: 30px;
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: pomerajdesno 3s ease;
+    border-radius: 3px;
+}
+
+.levislide:hover{
+    border-color: rgb(98, 179, 255);
+}
+
+
+@keyframes pomerajdesno {
+    from{
+        opacity: 0;
+        transform: translateX(-400px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes pomerajlevo {
+    from{
+        opacity: 0;
+        transform: translateX(400px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.desnislide{
+    position: relative;
+    width: 600px;
+    height:380px;
+    border: 2px solid white;
+    border-right: none;
+    margin-left: 45%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: pomerajlevo 3s ease;
+    border-radius: 3px;
+}
+
+.desnislide:hover{
+    border-color: rgb(98, 179, 255);
+}
+
+.desnislide ul{
+    position:absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.desnislide li{
+    font-size: 13px;
+}
+
+.desnislide p{
+    position: absolute;
+    text-align: justify;
+    margin: 5% 10%;
+    margin-right: 45%;
+}   
+
+.desnislide img{
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    width: 110px;
+    height: 110px;
+    transition: 0.25s ease;
+}
+
+.levislide button{
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+    font-size: 14px;
+    border: 3px solid rgb(255, 25, 82);
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.levislide button:hover{
+    background-color: rgb(233, 102, 14);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.desnislide button{
+    position: absolute;
+    bottom: 10%;
+    left: 25%;font-size: 14px;
+    border: 3px solid rgb(255, 25, 82);
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.desnislide button:hover{
+    background-color: rgb(233, 102, 14);
+    color: white;
+    transition: 0.3s ease;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(#f9f9f9,rgb(100, 167, 243));
+}
+
+@media screen and (max-width: 768px){
+    .jedan li{
+        display: flex;
+        padding: 2px;
+        margin-left: 60%;
+    }
+    
+    #kontakt{
+        display:none;
+    }
+}
+
+.a{
+    width: 60%;
+    height: 500px;
+    position:relative;
+    margin: 90px auto;
+    border-left: 2px solid rgb(110, 220, 243);
+    border-right: 2px solid rgb(110, 220, 243);
+}
+.a img{
+    margin-left: 43px;
+    width:170px;
+    height:170px;
+    padding: 70px 30px 30px;
+    transition-duration: 0.25s;
+}
+
+.qwe{
+    position:relative;
+}
+#b{
+    position:absolute;
+    left: 501px;
+    top: 360px;
+}
+
+#c{
+    position: absolute;
+    left: 778px;
+    top: 360px;
+}
+
+#d{
+    position:absolute;
+    left: 1050px;
+    top: 360px;
+}
+
+#e{
+    position:absolute;
+    left: 1340px;
+    top: 360px;
+}
+
+#f{
+    position:absolute;
+    left: 500px;
+    top: 635px;
+}
+
+#g{
+    position:absolute;
+    left: 775px;
+    top: 635px;
+}
+
+#h{
+    position:absolute;
+    left: 1048px;
+    top: 635px;
+}
+
+#i{
+    position:absolute;
+    left: 1330px;
+    top: 635px;
+}
+
+.onama{
+    width: 80%;
+    position: relative;
+    margin: 50px auto;
+}
+
+.onama h2{
+    margin:0px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(255, 108, 11);
+    padding-bottom: 20px;
+}
+
+.onama p{
+    background-color: rgb(96, 178, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.onama img{
+    margin-top: 20px;
+    padding: 0px 15px;
+    scale: 1;
+}
